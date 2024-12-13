@@ -268,7 +268,7 @@ def narrate_story(csv_file, analysis_results, category):
     url = "http://aiproxy.sanand.workers.dev/openai/v1/chat/completions"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer " + os.getenv("AI_PROXY")
+        "Authorization": "Bearer " + os.getenv("AIPROXY_TOKEN")
         }
     
     prompt = (
